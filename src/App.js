@@ -64,7 +64,7 @@ function App() {
   // Function to handle search filtering
   const handleSearch = (searchTerm) => {
     const filteredUsers = users.filter((user) =>
-      user.profile.first.toLowerCase().includes(searchTerm.toLowerCase())
+      user.profile.firstName.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setUsers(filteredUsers); // Update users state with filtered users
   };
